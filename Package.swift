@@ -26,7 +26,7 @@ let package = Package(
             dependencies: ["SwiftCSV"],
             path: "SwiftCSVTests",
             resources: [
-                .copy("TestData"),
+                .process("TestData"),
             ]),
     ],
     swiftLanguageVersions: [.v5, .v4_2]
